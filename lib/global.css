@@ -113,6 +113,13 @@ main.css-zlhazh {
 .css-3eysk6 {
     font-size: 20px !important;
 }
+.css-exe15s {
+    display: inline-flex !important;
+    gap: inherit !important;
+}
+.css-exe15s:hover {
+  color: #fff !important;
+}
 @media (max-width: 767px) {
     .css-xmwqz8{
         padding: 20px !important;

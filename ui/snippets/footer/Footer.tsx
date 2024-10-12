@@ -113,7 +113,7 @@ const Footer = () => {
         columnGap={8}
         rowGap={6}
         mb={{ base: 5, lg: 10 }}
-       // _empty={{ display: 'none' }}
+        _empty={{ display: 'none' }}
       >
         {!config.UI.indexingAlert.intTxs.isHidden && <IntTxsIndexingStatus />}
         <NetworkAddToWallet />
@@ -124,13 +124,16 @@ const Footer = () => {
   const renderProjectInfo = React.useCallback((gridArea?: GridProps['gridArea']) => {
     return (
       <Box gridArea={gridArea}>
-      
+       <NetworkAddToWallet />
         <Flex columnGap={2} fontSize="xs" lineHeight={5} alignItems="center" color="text">
+         
+          <Link href="https://www.validblock.ai" isExternal display="inline-flex" color="text" >
           <span>Powered By </span>
-          <Link href="https://www.validblock.ai" isExternal display="inline-flex" >
             <img src="https://validblock.ai/img/validBlock.png"
-              alt={`${config.chain.name} network logo`} width="30px" /> Valid Block
+              alt={`${config.chain.name} network logo`} width="22px" />
+              <Text>{config.chain.name}</Text>
           </Link>
+
         </Flex> 
         <Text mt={3} fontSize="xs">
           Validblock Scan is a Block Explorer and Analytics Platform for Valid Block PoS Chain.
