@@ -26,6 +26,7 @@ import Web3ModalProvider from 'ui/shared/Web3ModalProvider';
 
 import 'lib/setLocale';
 // import 'focus-visible/dist/focus-visible';
+import 'lib/global.css';
 
 type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;

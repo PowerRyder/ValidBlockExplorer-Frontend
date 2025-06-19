@@ -48,6 +48,7 @@ const PageNextJs = <Pathname extends Route['pathname']>(props: Props<Pathname>) 
         <meta name="twitter:title" content={ opengraph.title }/>
         { opengraph.description && <meta name="twitter:description" content={ opengraph.description }/> }
         <meta property="twitter:image" content={ opengraph.imageUrl }/>
+
       </Head>
       { props.children }
     </>
